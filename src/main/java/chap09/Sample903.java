@@ -1,4 +1,4 @@
-package chap4;
+package chap09;
 
 import java.io.IOException;
 
@@ -10,26 +10,17 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class Sample401Form
+ * Servlet implementation class Sample902
  */
-@WebServlet("/Sample401")
-public class Sample401Form extends HttpServlet {
+@WebServlet("/Sample903")
+public class Sample903 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
-    public Sample401Form() {
-        super();
-        // TODO Auto-generated constructor stub
-    }
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/chap04/sample401.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/chap09/sample903.jsp");
 		dispatcher.forward(request, response);
 	}
 
